@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Renat Khabirov](https://up.htmlacademy.ru/htmlcss/34/user/1996945).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
