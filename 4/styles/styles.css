@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/ptsans-italic.ttf") format("ttf");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-bold-italic.ttf") format("ttf");
+
+  font-display: swap;
+}
+
+:root {
+  --main-color: #000000;
+  --addition-color: #333333;
+  --background-base-color: #FFFFFF;
+  --background-main-color: #82B3D3;
+  --background-addition-first-color: rgba(131, 179, 211, 0.12);
+  --background-addition-second-color: rgba(131, 179, 211, 0.2);
+  --button-main-color: #756157;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--addition-color);
+  background-color: var(--background-base-color);
+}
+
+/* Pages */
+
+.site-navigation, .user-navigation {
+  list-style: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+
+.main-index {
+  background-image: url("../img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-index h1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.promo-info {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--addition-color);
+}
+
+.advantage-item-blue {
+  text-align: center;
+  color: var(--background-base-color);
+  background-color: var(--background-main-color);
+}
+
+.advantage-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantage-item-number {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantage-item-info {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantage-item-light-blue {
+  background-color: var(--background-addition-first-color);
+}
+
+.advantage-item-light {
+  background-color: var(--background-base-color);
+}
+
+.advantage-item-light-blue2 {
+  background-color: var(--background-addition-second-color);
+}
+
+.offer {
+  text-align: center;
+}
+
+.offer-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.offer-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--addition-color);
+}
+
+
+.mailing {
+  background-image: url("../img/mailing-background.jpg");
+  background-repeat: no-repeat;
+  background-color: var(--background-addition-first-color);
+  text-align: center;
+  color: var(--background-base-color);
+}
+
+.mailing-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.mailing-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.social {
+  list-style: none;
+}
+
+.footer-link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--background-base-color);
+  background-color: var(--button-main-color);
+}
+
+.button-blue {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--background-base-color);
+  background-color: var(--background-main-color);
+}
