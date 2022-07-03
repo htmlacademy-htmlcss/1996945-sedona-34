@@ -54,7 +54,11 @@ body {
 
 /* Pages */
 
-.site-navigation, .user-navigation {
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation {
   list-style: none;
 }
 
