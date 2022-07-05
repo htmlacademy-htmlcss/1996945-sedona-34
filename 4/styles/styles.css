@@ -16,24 +16,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/ptsans-italic.ttf") format("ttf");
-
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/ptsans-bold-italic.ttf") format("ttf");
-
-  font-display: swap;
-}
-
 :root {
   --main-color: #000000;
   --addition-color: #333333;
@@ -54,7 +36,11 @@ body {
 
 /* Pages */
 
-.site-navigation, .user-navigation {
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation {
   list-style: none;
 }
 
