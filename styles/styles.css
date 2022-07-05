@@ -53,10 +53,11 @@ body {
   color: var(--main-color);
 }
 
-.main-index {
+.index-background {
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  min-height: 485px;
 }
 
 .main-index h1 {
