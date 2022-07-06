@@ -53,7 +53,7 @@ body {
   color: var(--main-color);
 }
 
-.index-background {
+.promo {
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
