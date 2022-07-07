@@ -26,7 +26,15 @@
   --button-main-color: #756157;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -35,13 +43,35 @@ body {
 }
 
 /* Pages */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.main-logo {
+  margin-left: 70px;
+}
+
+.navigation-list {
+  padding: 0;
+  margin: 0;
+}
 
 .site-navigation {
   list-style: none;
+  width: 400px;
+  margin-left: 30px;
 }
 
 .user-navigation {
   list-style: none;
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -60,6 +90,10 @@ body {
   min-height: 485px;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index h1 {
   font-size: 30px;
   line-height: 36px;
@@ -74,6 +108,23 @@ body {
   line-height: 26px;
   text-align: center;
   color: var(--addition-color);
+}
+
+.advantage-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage-item {
+  flex-basis: 400px;
+}
+
+.advantage-container {
+  display: flex;
 }
 
 .advantage-item-blue {
@@ -150,8 +201,15 @@ body {
   line-height: 26px;
 }
 
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
 .social {
   list-style: none;
+  display: flex;
 }
 
 .footer-link {
