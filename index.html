@@ -21,15 +21,15 @@
       <ul class="navigation-list user-navigation">
         <li><a class="navigation-link" href="#"><span class="visually-hidden">поиск</span></a></li>
         <li><a class="navigation-link" href="#"><span class="visually-hidden">корзина</span></a></li>
-        <li><a class="navigation-link button-brown" href="#"><span class="visually-hidden">хочу сюда!</span></a></li>
+        <li><a class="navigation-link button button-navigation" href="#">хочу сюда!</a></li>
       </ul>
     </nav>
   </header>
   <main class="main-container main-index">
-    <h1>Седона — небольшой городок в Аризоне,
-      заслуживающий большего!</h1>
+    <h1 class="visually-hidden">Седона — небольшой городок в Аризоне</h1>
     <section class="promo">
-      <h2 class="visually-hidden">общая информация о городке Седона</h2>
+      <h2 class="promo-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+      <img class="promo-image" src="img/welcome.svg" width="458" height="352" alt="welcome to the Sedona">
       <p class="promo-info">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       <div class="advantage-container">
         <div class="advantage-item advantage-item-blue">
@@ -92,27 +92,41 @@
     </section>
     <section class="offer">
       <h2 class="offer-title">Заинтересовались?</h2>
-      <p class="offer-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-        Седоне </p>
-      <a class="button-brown" href="catalog.html">поиск гостиницы в Седоне</a>
+      <p class="offer-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <a class="button offer-button" href="catalog.html">поиск гостиницы в Седоне</a>
     </section>
   </main>
   <footer>
     <section class="mailing">
-      <h2 class="visually-hidden">рассылка</h2>
-      <p class="mailing-title">Подпишитесь на рассылку</p>
-      <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="#" method="get">
-        <input type="email" placeholder="Ваш e-mail">
-        <button class="button-blue" type="submit">Подписаться</button>
-      </form>
+      <div class="mailing-container">
+        <h2 class="visually-hidden">рассылка</h2>
+        <p class="mailing-title">Подпишитесь на рассылку</p>
+        <p class="mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="mailing-form" action="#" method="get">
+          <input class="mailing-form-email" type="email" placeholder="Ваш e-mail">
+          <button class="button-blue" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
     <section class="footer-info">
-<!--      <h2 class="visually-hidden">контакты</h2>-->
+      <h2 class="visually-hidden">контакты</h2>
       <ul class="social">
-        <li><a class="footer-link social-vk" href="https://vk.com/htmlacademy">vkontakte</a></li>
-        <li><a class="footer-link social-fb" href="https://www.facebook.com/htmlacademy">facebook</a></li>
-        <li><a class="footer-link §social-youtube" href="https://www.youtube.com/htmlacademy">youtube</a></li>
+        <li>
+          <a class="footer-link social-vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">vkontakte</span>
+          </a>
+        </li>
+        <li>
+          <a class="footer-link social-fb" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="footer-link §social-youtube" href="https://www.youtube.com/htmlacademy">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
       </ul>
       <a class="footer-link" href="tel:7-812-812-12-12">+7 (812) 812-12-12</a>
       <a class="footer-link" href="#">
