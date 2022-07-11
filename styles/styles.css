@@ -60,18 +60,27 @@ body {
 .navigation-list {
   padding: 0;
   margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .site-navigation {
-  list-style: none;
   width: 400px;
   margin-left: 30px;
+  padding: 20px 17px;
 }
 
 .user-navigation {
-  list-style: none;
   max-width: 300px;
   margin-left: auto;
+  padding: 14px 11px 15px;
+}
+
+.user-navigation .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .navigation-link {
@@ -81,6 +90,11 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   color: var(--main-color);
+  display: block;
+}
+
+.button-navigation {
+  padding: 9px 15px 8px;
 }
 
 .promo {
@@ -103,11 +117,44 @@ body {
   color: var(--main-color);
 }
 
+/*.promo-title::before {*/
+/*  content: '';*/
+/*  height: 352px;*/
+/*  width: 458px;*/
+/*  background:url("../img/welcome.svg");*/
+/*  margin: 51px auto 81px;*/
+/*  display: block;*/
+/*}*/
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 51px;
+}
+
+.promo-title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.promo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  order: -1;
+  margin-bottom: 145px;
+}
+
 .promo-info {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: var(--addition-color);
+  margin-bottom: 90px;
 }
 
 .advantage-list {
@@ -117,10 +164,14 @@ body {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  min-height: 385px;
 }
 
 .advantage-item {
   flex-basis: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .advantage-container {
@@ -131,6 +182,7 @@ body {
   text-align: center;
   color: var(--background-base-color);
   background-color: var(--background-main-color);
+  padding: 92px 85px 0px;
 }
 
 .advantage-item-title {
@@ -138,6 +190,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+
 }
 
 .advantage-item-number {
@@ -152,6 +205,7 @@ body {
 
 .advantage-item-light-blue {
   background-color: var(--background-addition-first-color);
+  /*padding-top: 80px;*/
 }
 
 .advantage-item-light {
@@ -164,6 +218,8 @@ body {
 
 .offer {
   text-align: center;
+  padding-top: 91px;
+  min-height: 417px;
 }
 
 .offer-title {
@@ -172,12 +228,18 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 29px;
 }
 
 .offer-text {
   font-size: 22px;
   line-height: 26px;
   color: var(--addition-color);
+  margin-bottom: 56px;
+}
+
+.offer-button {
+  padding: 12px 15px;
 }
 
 
@@ -187,6 +249,14 @@ body {
   background-color: var(--background-addition-first-color);
   text-align: center;
   color: var(--background-base-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.mailing-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mailing-title {
@@ -194,17 +264,30 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 29px;
 }
 
 .mailing-text {
   font-size: 22px;
   line-height: 26px;
+  padding-bottom: 46px;
+}
+
+.mailing-form {
+  justify-content: center;
+  display: flex;
+  /*margin-bottom: 94px;*/
+}
+
+.mailing-form-email {
+  flex-grow: 1;
 }
 
 .footer-info {
   display: flex;
   justify-content: space-between;
   min-height: 120px;
+  padding: 40px 70px 30px;
 }
 
 .social {
@@ -224,6 +307,7 @@ body {
   line-height: 20px;
   color: var(--background-base-color);
   background-color: var(--button-main-color);
+  text-transform: uppercase;
 }
 
 .button-blue {
@@ -232,4 +316,15 @@ body {
   line-height: 36px;
   color: var(--background-base-color);
   background-color: var(--background-main-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
